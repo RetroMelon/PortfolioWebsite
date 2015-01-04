@@ -148,6 +148,7 @@ h1 {
   color: white;
   font-size: 20px;
   display: inline-block;
+  vertical-align: middle;
   width: auto;
   padding: 8px 15px;
 }
@@ -185,6 +186,10 @@ h1 {
 }
 .profile-widget .media-heading {
   color: #5B5147;
+}
+
+.profile-widget .media-body {
+  line-height: 18px;
 }
 
 .profile-widget .panel-body {
