@@ -1,0 +1,23 @@
+* {
+  font: 16px Helvetica, Sans-Serif;
+}
+
+.profile-picture {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.center-horizontal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.center-vertical {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}

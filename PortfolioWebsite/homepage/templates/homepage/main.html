@@ -1,0 +1,50 @@
+{% extends "homepage/base.html" %}
+
+
+{% block scripts %}
+{# including the CSS for this page #}
+<link rel="stylesheet" type="text/css" href="/static/homepage/css/main.css">
+<link rel="stylesheet" type="text/css" href="/static/homepage/css/socialmediabuttons.css">
+{% endblock %}
+
+{% block content %}
+
+{% include "homepage/nav.html" %}
+
+<div class="banner">
+    <!--img class="banner-image" src="/static/homepage/images/background.png"/-->
+    <div class="container">
+      <div class="col-md-6 banner-section">
+        <div class="vertical-center" id="intro-container">
+          <img class="profile-picture center-block" src="http://graph.facebook.com/joe.frew.39/picture?type=large"/>
+          <p class="intro-text center-block">Hi, I'm Joe, a 2nd year Computing Science student at the University of Glasgow.
+             I like tinkering with tech/programming and playing guitar, harmonica and piano.
+              Recently I have taken a particular interest in webdev, big data and machine learning. </p>
+            <ul class="soc">
+              <li><a class="soc-youtube" href="https://www.youtube.com/channel/UCzvsGaUdC3-bfI4x1xHvFMw"></a></li>
+              <li><a class="soc-facebook" href="https://www.facebook.com/joe.frew.39"></a></li>
+              <li><a class="soc-google" href="https://plus.google.com/u/0/+JoeFrew/posts"></a></li>
+              <li><a class="soc-linkedin soc-icon-last" href="#"></a></li>
+              <!--li><a class="soc-twitter " href="#"></a></li-->
+            </ul>
+        </div>
+      </div>
+      <div class="col-md-6 banner-section">
+        <div id="cv-container">
+            <p class="side-by-side cv-look">CHECK OUT MY CV  <span class="glyphicon glyphicon-arrow-right"/></p>
+            <a href="/static/homepage/files/Joe Frew - CV.pdf">
+              <img class="side-by-side cv-thumb" src="/static/homepage/images/cvthumb.png"/>
+            </a>
+        </div>
+      </div>
+
+  </div>
+
+</div>
+<div class="content-div">
+  <h1 class="section-title">Hello</h1>
+  <div class="container content-panels">
+  </div>
+</div>
+
+{% endblock %}

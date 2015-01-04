@@ -1,0 +1,80 @@
+/*html {
+  min-width:480px;
+}*/
+
+.banner {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  background: url('/static/homepage/images/backgroundblurred.png') repeat;
+  clear:both;
+  -webkit-box-shadow: inset 0px 0px 88px 5px rgba(0,0,0,0.54);
+  -moz-box-shadow: inset 0px 0px 88px 5px rgba(0,0,0,0.54);
+  box-shadow: inset 0px 0px 88px 5px rgba(0,0,0,0.54);
+}
+
+.banner-section {
+  height: 450px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.profile-picture {
+  box-shadow: 0px 0px 50% rgba(0, 0, 0, 0.6);
+}
+
+.content-div {
+  background-color: #87ACD1;
+  border: 1px #87ACDf;
+  margin: 0px;
+  padding: 0px;
+  height: 400px;
+  width: 100%;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+  text-align: justify;
+  width: 400px;
+  color: rgb(248, 248, 248);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.side-by-side {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+#cv-container{
+  text-align:center;
+  padding-top: 120px;
+}
+
+#intro-container {
+  margin-top: 70px;
+}
+
+.cv-thumb {
+  width: 140px;
+  height: 210px;
+  border-color: black;
+  border-radius: 5px;
+  border: double 3px;
+}
+
+.cv-look {
+  width: auto;
+  height: auto;
+  padding-right: 30px;
+
+  color: rgb(248, 248, 248);
+  vertical-align: center;
+  text-align: center;
+}
