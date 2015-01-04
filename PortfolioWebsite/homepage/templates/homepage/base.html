@@ -3,11 +3,11 @@
     <head>
         <title>Joe Frew</title>
         {# importing boostrap and jquery #}
-        <link rel="shortcut icon" type="image/png" href="/static/images/logosmall.png"/>
+        <link rel="shortcut icon" type="image/png" href="{{STATIC_URL}}images/logosmall.png"/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-        <script src="/static/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/static//css/base.css">
+        <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css">
+        <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{STATIC_URL}}css/base.css">
         {% block scripts %}{% endblock %}
 
         {% include "homepage/nav.html" %}

@@ -1,0 +1,70 @@
+{% extends "homepage/base.html" %}
+
+
+{% block scripts %}
+{# including the CSS for this page #}
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/socialmediabuttons.css">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/main.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <div class="container">
+      <img class="profile-picture center-horizontal" src="http://graph.facebook.com/joe.frew.39/picture?type=large"/>
+          <h1 class="text-center">Joe Frew</h1>
+          <h3 class="text-justify" id="intro-text">Hi, I'm Joe, a 2nd year Computing Science student at the University of Glasgow.
+            I like tinkering with tech/programming and playing guitar, harmonica and piano.
+            Recently I have taken a particular interest in webdev, big data and machine learning.</h2>
+        <ul class="soc center-horizontal">
+          <li><a class="soc-youtube" href="https://www.youtube.com/channel/UCzvsGaUdC3-bfI4x1xHvFMw"></a></li>
+          <li><a class="soc-github" href="https://github.com/RetroMelon"></a></li>
+          <li><a class="soc-facebook" href="https://www.facebook.com/joe.frew.39"></a></li>
+          <li><a class="soc-linkedin soc-icon-last" href="#"></a></li>
+        </ul>
+      </div>
+</div>
+
+<div class="content-section" id="cv-section">
+    <div class="center-horizontal">
+      <a class="" href="{{STATIC_URL}}files/Joe Frew - CV Redacted.pdf" id="cv-outer">
+        <div id="cv-with-burst">
+          <img src="{{STATIC_URL}}images/speechbubble.png" id="avatar">
+          <img src="{{STATIC_URL}}images/burst.svg" id="burst-12" class="rotating">
+          <img src="{{STATIC_URL}}images/cvthumbsmall.png" class="center-horizontal" id="cv">
+        </div>
+      </a>
+    </div>
+</div>
+
+<div class="content-section" id="projects-section">
+
+  <h1 id="projects-text">Projects</h1>
+  <ul class="filter-list">
+    <li class="btn" filter="">All</li>
+    <li class="btn" filter="Google">Google</li>
+    <li class="btn" filter="Robot">Robot</li>
+    <li class="btn" filter="Stilton">Cheese</li>
+    <li><input type="text" class="form-control" placeholder="Custom Filter" id="search-term">
+    </input></li>
+  </ul>
+
+  <div class="container">
+    <div class="row item-container">
+
+      {% include "homepage/projectpanels.html" %}
+      {% include "homepage/test/testpanels.html" %}
+
+    </div>
+    <div class="col-xs-12 col-lg-12 center-horizontal" id="noitems">
+      <h2>Sorry, there are no projects that match your query <span class="glyphicon glyphicon-thumbs-down"></span></h2>
+    </div>
+  </div>
+</div>
+
+
+<script src="{{STATIC_URL}}js/isotope.pkgd.js"></script>
+<script src="{{STATIC_URL}}js/isotopeSearchFilter.jquery.js"></script>
+<script src="{{STATIC_URL}}js/main.js"></script>
+
+  {% endblock %}

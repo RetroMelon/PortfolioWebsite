@@ -22,7 +22,7 @@ h1 {
   padding-bottom: 110px;
   background-color: darkcyan; /*cadetblue darkcyan darkslategrey*/
   color: white;
-  background-image: url("/static/homepage/images/background3.jpg");
+  background-image: url("../images/background3.jpg");
 }
 
 .profile-picture {
@@ -34,6 +34,7 @@ h1 {
 #intro-text {
   padding-left: 10%;
   padding-right: 10%;
+  line-height: 120%;
   color: white;
   text-shadow: 1px 1px 0px black;
 }
