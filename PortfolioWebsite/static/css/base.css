@@ -14,7 +14,7 @@ D96459 - red
 
 
 body {
-  background-color: cadetblue;/*mediumquamarine cadetblue darkcyan*/
+  background-color: #588C7E;/*mediumquamarine cadetblue darkcyan*/
 }
 
 .profile-picture {
@@ -51,7 +51,7 @@ body {
   position: relative;
   left: 0px;
   right:0px;
-  padding: 20px;
+  padding: 30px;
   font-size: 30px;
   color: white;
 }
