@@ -7,5 +7,4 @@ urlpatterns = patterns('homepage.views',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', 'homepage'),
-    url(r'^2', 'homepage2'),
 )

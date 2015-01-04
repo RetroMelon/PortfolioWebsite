@@ -1,0 +1,66 @@
+/*
+Colour scheme:
+
+588C7E - green
+F2E394 - yellow
+F2AE72 - orange
+D96459 - red
+8C4646 - burgundy
+*/
+
+* {
+  font: 16px Helvetica, Sans-Serif;
+}
+
+
+body {
+  background-color: cadetblue;/*mediumquamarine cadetblue darkcyan*/
+}
+
+.profile-picture {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.center-horizontal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.center-vertical {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+
+/* Nav Bar */
+#customnav {
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+#customnav .glyphicon {
+  position: relative;
+  left: 0px;
+  right:0px;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+/* Footer */
+#footer {
+  padding-top:40px;
+  color: white;
+  background-color: rgb(74, 65, 55);
+  height: 200px;
+  width: 100%;
+}
