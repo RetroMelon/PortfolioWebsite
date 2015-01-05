@@ -5,6 +5,9 @@
 
 body {
   background-color: #588C7E;/*mediumquamarine cadetblue darkcyan*/
+  overflow-x: hidden;
+  position: absolute;
+  width:100%;
 }
 
 .profile-picture {
@@ -48,9 +51,14 @@ body {
 
 /* Footer */
 #footer {
-  padding-top:40px;
+  padding: 50px 0px 25px 0px;
   color: white;
   background-color: rgb(74, 65, 55);
-  height: 200px;
   width: 100%;
+}
+
+#footer .center-horizontal {
+  color: white;
+  font-size: 14px;
+  opacity: 0.6;
 }

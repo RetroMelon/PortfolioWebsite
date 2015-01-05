@@ -1,13 +1,5 @@
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-body {
-  background-color: #588C7E;
-}
-
-html {
-  overflow-x: hidden;
-}
-
 h1 {
   text-align: center;
   color: white;
@@ -15,6 +7,10 @@ h1 {
   text-shadow: 4px 4px 0px black;
 }
 
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
 .jumbotron {
   width: 100%;
@@ -123,6 +119,11 @@ h1 {
   text-transform: uppercase;
 }
 
+#projects-container {
+  width:100%;
+  max-width: 1170px;
+}
+
 .filter-list {
   display: block;
   /*width: 100%;*/
@@ -133,12 +134,17 @@ h1 {
 .filter-list > li {
   opacity: 0.8;
   text-transform: uppercase;
+  border-radius: 3px;
   color: white;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
   width: auto;
   padding: 8px 15px;
+}
+
+.filter-list input {
+  border-radius: 3px;
 }
 
 #noitems {
@@ -153,6 +159,12 @@ h1 {
 #noitems .glyphicon {
   font-size: 36px;
   vertical-align: middle;
+}
+
+#invisiblesmoothscroll {
+  position: relative;
+  width: 1px;
+  height: 0px;
 }
 
 /*-- Profile Widgets --*/

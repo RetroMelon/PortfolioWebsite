@@ -112,3 +112,10 @@
 .soc-github:before {
   content:'Q';
 }
+
+.soc-soundcloud {
+  background-color: #fe3801;
+}
+.soc-soundcloud:before {
+  content:'n';
+}

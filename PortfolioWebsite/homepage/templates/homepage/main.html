@@ -13,9 +13,7 @@
     <div class="container">
       <img class="profile-picture center-horizontal" src="http://graph.facebook.com/joe.frew.39/picture?type=large"/>
           <h1 class="text-center">Joe Frew</h1>
-          <h3 class="text-justify" id="intro-text">Hi, I'm Joe, a 2nd year Computing Science student at the University of Glasgow.
-            I like tinkering with tech/programming and playing guitar, harmonica and piano.
-            Recently I have taken a particular interest in webdev, big data and machine learning.</h2>
+          <h3 class="text-justify" id="intro-text">A 2nd year Computing Science student at the University of Glasgow - I love playing guitar, harmonica and singing, and find programming excitingly addictive. Robots are awesome, but my main interests are machine learning and big data.</h2>
         <ul class="soc center-horizontal">
           <li><a class="soc-youtube" href="https://www.youtube.com/channel/UCzvsGaUdC3-bfI4x1xHvFMw"></a></li>
           <li><a class="soc-github" href="https://github.com/RetroMelon"></a></li>
@@ -25,8 +23,7 @@
       </div>
 </div>
 
-<div class="content-section" id="cv-section">
-    <div class="center-horizontal">
+<div class="content-section center-horizontal" id="cv-section">
       <a class="" href="{{STATIC_URL}}files/Joe Frew - CV Redacted.pdf" id="cv-outer">
         <div id="cv-with-burst">
           <img src="{{STATIC_URL}}images/speechbubble.png" id="avatar">
@@ -34,7 +31,6 @@
           <img src="{{STATIC_URL}}images/cvthumbsmall.png" class="center-horizontal" id="cv">
         </div>
       </a>
-    </div>
 </div>
 
 <div class="content-section" id="projects-section">
@@ -42,22 +38,24 @@
   <h1 id="projects-text">Projects</h1>
   <ul class="filter-list">
     <li class="btn" filter="">All</li>
-    <li class="btn" filter="Google">Google</li>
-    <li class="btn" filter="Robot">Robot</li>
-    <li class="btn" filter="Stilton">Cheese</li>
+    <li class="btn" filter="robot">Robotics</li>
+    <li class="btn" filter="data">Data</li>
+    <li class="btn" filter="web">Web</li>
+    <li class="btn" filter="music">Music</li>
     <li><input type="text" class="form-control" placeholder="Custom Filter" id="search-term">
     </input></li>
   </ul>
 
-  <div class="container">
+  <div class="container center-horizontal" id="projects-container">
     <div class="row item-container">
 
       {% include "homepage/projectpanels.html" %}
-      {% include "homepage/test/testpanels.html" %}
+      {#% include "homepage/test/testpanels.html" %#}
 
     </div>
     <div class="col-xs-12 col-lg-12 center-horizontal" id="noitems">
       <h2>Sorry, there are no projects that match your query <span class="glyphicon glyphicon-thumbs-down"></span></h2>
+      <div id="invisiblesmoothscroll"></div>
     </div>
   </div>
 </div>
