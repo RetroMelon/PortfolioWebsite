@@ -53,8 +53,9 @@ body {
 #footer {
   padding: 50px 0px 25px 0px;
   color: white;
-  background-color: rgb(74, 65, 55);
+  background-color: rgb(82, 75, 67); /*rgb(74, 65, 55)*/
   width: 100%;
+  box-shadow: inset 0 20px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
 #footer .center-horizontal {

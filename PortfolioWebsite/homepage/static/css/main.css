@@ -16,8 +16,9 @@ h1 {
   width: 100%;
   margin-bottom: 0px;
   padding-bottom: 110px;
-  background-color: darkcyan; /*cadetblue darkcyan darkslategrey*/
+  background-color: rgb(43, 72, 116); /*cadetblue darkcyan darkslategrey*/
   color: white;
+  box-shadow: inset 0 0 100px #222;
   background-image: url("../images/background3.jpg");
 }
 
@@ -110,7 +111,7 @@ h1 {
 
 /*-- Projects & Filters --*/
 #projects-section {
-  border-bottom: 6px solid rgb(51, 51, 51);
+  border-bottom: 6px solid rgb(52, 106, 108);
   padding-top: 15px;
 }
 
@@ -134,7 +135,7 @@ h1 {
 .filter-list > li {
   opacity: 0.8;
   text-transform: uppercase;
-  border-radius: 3px;
+  border-radius: 2px;
   color: white;
   font-size: 20px;
   display: inline-block;
