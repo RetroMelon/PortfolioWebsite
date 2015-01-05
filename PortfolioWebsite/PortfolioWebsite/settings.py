@@ -16,7 +16,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
+def generate_secret_key(filename):
+    from django.utils.crypto import get_random_string
+
+    chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
+    secretkey = get_random_string(50, chars)
+
+    f = open(filename, 'w')
+    f.write('SECRET_KEY = \'' + secretkey + '\'')
+    f.close()
+
+
 # SECURITY WARNING: keep the secret key used in production secret!
+#SECRET_KEY generation
 try:
     from secret_key import *
 except ImportError:
@@ -29,7 +41,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.joefrew.co.uk']
 
 
 # Application definition
