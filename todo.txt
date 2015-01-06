@@ -1,0 +1,8 @@
+todo
+=========
+
+	*Put nginx defaults on the repo
+	*Add the Intergalactic Intruders game as a card on the page. (add "software" as a filter)
+	*set up with analytics - google?
+	*set up with nginx > gunicorn > django.
+
