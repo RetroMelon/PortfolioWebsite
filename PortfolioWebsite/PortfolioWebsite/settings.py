@@ -27,19 +27,22 @@ def generate_secret_key(filename):
     f.close()
 
 
-# SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY generation
-try:
-    from secret_key import *
-except ImportError:
-    SETTINGS_DIR=os.path.abspath(os.path.dirname(__file__))
-    generate_secret_key(os.path.join(SETTINGS_DIR, 'secret_key.py'))
-    from secret_key import *
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+
+# SECURITY WARNING: keep the secret key used in production secret!
+#if we are in debug mode, disable new key generation.
+if(DEBUG):
+    SECRET_KEY = 'Joeg-sdtdbyw5qmibwp6yd-0l&tjwwuzb#ul*yonna!6vwifc8(*u'
+else:
+    try:
+        from secret_key import *
+    except ImportError:
+        SETTINGS_DIR=os.path.abspath(os.path.dirname(__file__))
+        generate_secret_key(os.path.join(SETTINGS_DIR, 'secret_key.py'))
+        from secret_key import *
 
 ALLOWED_HOSTS = ['.joefrew.co.uk']
 
