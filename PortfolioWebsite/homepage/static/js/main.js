@@ -18,7 +18,7 @@ $(document).ready(function(){
     if(numberofitems <= 0) {
       //showing the message
       $noitems.css("display", "block");
-
+      
       //smoothscrolling
       //checking if height decreased, and by how much
       var newheight = $container.height();
